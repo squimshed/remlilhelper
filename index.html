@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rem's Lil Helper Animation - Jackie</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <main>
+        <h1>lil helper of sleepy boy rem</h1>
+        <p>by <a href="https://twitter.com/squismhed" target="_blank">jackie</a></p>
+    </main>
+
+    <canvas id="canvas" width="500" height="500"></canvas>
+          <script src="https://unpkg.com/@rive-app/canvas"></script>
+            <script>
+              const r = new rive.Rive({
+                  src: "./assets/remlilhelper.riv",
+                  canvas: document.getElementById("canvas"),
+                  autoplay: true,
+                  stateMachines: "State Machine 1",
+                  onLoad: () => {
+                    r.resizeDrawingSurfaceToCanvas();
+                  },
+              });
+</script>
+</body>
+</html>
