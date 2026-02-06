@@ -76,9 +76,31 @@ h1, p, a {
     margin-bottom: 0.75 rem;
 }
 
-a{ 
-    color: #a3a3ff;
+h1 {
+  font-size: rem;
 }
+
+a {
+  color: #a3a3ff;
+}
+
 a:hover {
     text-decoration: none;
+}
+
+/*default canvas*/
+@media only screen and (min-width:769px) {
+  canvas { 
+    width: 800px;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  canvas {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
 }
